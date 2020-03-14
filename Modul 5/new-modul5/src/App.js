@@ -1,66 +1,80 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link, useParams } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, useParams, useRouteMatch } from "react-router-dom";
 
-export default function ParamsExample(){
+export default function NestingExample(){
   return (
     <Router>
       <div>
-        <h2>
-          Accounts
-        </h2>
         <ul>
           <li>
-            <Link to ='/netflix'>Netflix</Link>
+            <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to ='/gmail'>Gmail</Link>
-          </li>
-          <li>
-            <Link to ='/Yahoo'>Yahoo</Link>
-          </li>
-          <li>
-            <Link to ='/Amazon'>Amazon</Link>
+            <Link to ='topics'>Topics</Link>
           </li>
         </ul>
+        <hr />
+
         <Switch>
-          <Route path = '/:id' children = {<Child />}/>
+          <Route exact path ='/'>
+            <Home />
+          </Route>
+          <Route path ='/topics'>
+            <Topics />
+          </Route>
         </Switch>
       </div>
     </Router>
   );
 }
 
-function Child (){
-  let {id} = useParams();
-  return (
-    <div>
-      <h3>ID: {id}</h3>
-    </div>
-  );
-}
-
-function Home() {
-  return (
+function Home (){
+  return(
     <div>
       <h2>Home</h2>
     </div>
   );
 }
 
-function About() {
-  return (
+function Topics(){
+  let {path, url} = useRouteMatch();
+  return(
     <div>
-      <h2>About</h2>
+      <h2>
+        Topics
+      </h2>
+      <ul>
+        <li>
+          <Link to={`${url}/Sate, Nasi goreng`}>Kuliner</Link>
+        </li>
+        <li>
+          <Link to={`${url}/Wisata alam, Museum`}>Travelling</Link>
+        </li>
+        <li>
+          <Link to={`${url}/Ibis, JW Marriot`}>Review Hotel</Link>
+        </li>
+      </ul>
+
+      <Switch>
+        <Route exact path = {path}>
+          <h3>Please Select a Topic</h3>
+        </Route>
+        <Route path ={`${path}/:topicId`}>
+          <Topic />
+        </Route>
+      </Switch>
     </div>
   );
 }
 
-function Dashboard() {
-  return (
+function Topic (){
+  let {topicId} = useParams();
+
+  return(
     <div>
-      <h2>Dashboard</h2>
+      <h3>{topicId}</h3>
     </div>
   );
 }
