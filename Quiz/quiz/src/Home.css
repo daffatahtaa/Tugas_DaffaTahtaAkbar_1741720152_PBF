@@ -1,0 +1,29 @@
+.background {
+    /* The image used */
+    background-image: url("./image/pic3.png");
+    
+    min-height: 970px;
+    
+    /* Center and scale the image nicely */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+    overflow: hidden;
+  }
+
+  body{
+    color: white;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }

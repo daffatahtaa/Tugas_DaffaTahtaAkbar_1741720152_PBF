@@ -1,9 +1,8 @@
 .base {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(75, 75 , 75);
+  background-color: transparent;
 }
 
 .navbar logo {
@@ -12,8 +11,8 @@
 
 .navbar {
   float: left;
-  display: flexbox;
-  color: white;
+  display: block;
+  color: transparent;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -22,7 +21,7 @@
 .navbar-right {
   float: right;
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -30,17 +29,16 @@
 
 .navbar-center {
   display: inline-block;
-  color: white;
+  color: transparent;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   text-align: center;
-  
 }
 
 .block {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -48,14 +46,69 @@
 
 /* Change the link color to #111 (black) on hover */
 .block:hover {
-  background-color:white;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
-.column{
+.column {
   float: left;
   width: 33.33%;
   padding: 10px;
-   
 }
 
+.home-text {
+  margin-left: 200px;
+  font-family: monospace;
+  font-size: 40sp;
+}
+
+.logo {
+  font-family: Tillana;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 46px;
+}
+
+.home-nav- {
+  font-family: Oxygen Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 33px;
+}
+
+.home-who {
+  font-family: Oxygen Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 33px;
+}
+
+.home-contact {
+  font-family: Oxygen Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 33px;
+}
+
+/*
+*/
+.bg-img {
+  /* The image used */
+  /* background-image: url("./image/pic2.jpg");*/
+
+  min-height: 600px;
+
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+  overflow: hidden;
+}
