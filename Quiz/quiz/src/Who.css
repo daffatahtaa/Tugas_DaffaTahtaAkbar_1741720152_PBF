@@ -1,0 +1,36 @@
+.background {
+  /* The image used */
+  background-image: url("./image/pic3.png");
+
+  min-height: 970px;
+
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+  overflow: hidden;
+}
+
+ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.data {
+  margin-left: 20%;
+  margin-top: 4%;
+  text-decoration: none;
+  font-family: 'Oxygen Mono',monospace;
+}
+
+.data2 {
+    margin-left: 20%;
+    text-decoration: none;
+    font-family: 'Oxygen Mono',monospace;
+  }
+  

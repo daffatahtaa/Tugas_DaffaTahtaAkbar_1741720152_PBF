@@ -1,29 +1,84 @@
 .background {
-    /* The image used */
-    background-image: url("./image/pic3.png");
-    
-    min-height: 970px;
-    
-    /* Center and scale the image nicely */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-  
-    /* Needed to position the navbar */
-    position: relative;
-    overflow: hidden;
-  }
+  /* The image used */
+  background-image: url("./image/pic3.png");
 
-  body{
-    color: white;
-    margin: 0;
-    padding: 0;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    height: 100%;
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
+  min-height: 970px;
+
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+  overflow: hidden;
+}
+
+.body-home{
+  overflow-y: hidden;
+}
+
+body {
+  background-color: ivory;
+  color: black;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.head {
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  transform-style: inherit;
+  width: 100vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.head h1 {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5em;
+}
+
+.head p {
+  font-size: xx-large;
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.head,
+.head:before {
+  background: 50% 50% / cover;
+}
+
+.head::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background-image: url("./image/pic.png");
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}

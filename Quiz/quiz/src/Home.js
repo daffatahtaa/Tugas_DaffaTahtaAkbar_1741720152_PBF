@@ -1,16 +1,19 @@
 import React from "react";
-import "./App.css";
 import "./Home.css";
 import App from "./App";
 
 export default function Home() {
   return (
     <div>
-      <body>
-        <header>
-          
+      <link
+        href="https://fonts.googleapis.com/css?family=Montserrat|Oxygen+Mono|Tillana&display=swap"
+        rel="stylesheet"
+      ></link>
+      <div className=""></div>
+      <body className="body-home">
+        <header className="head">
+          <h1>IMAGINE</h1>
         </header>
-        <div className="background"></div>
       </body>
     </div>
   );

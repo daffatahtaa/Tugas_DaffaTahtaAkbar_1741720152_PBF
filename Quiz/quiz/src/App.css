@@ -1,21 +1,12 @@
 .base {
+  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: transparent;
-}
-
-.navbar logo {
-  pointer-events: none;
-}
-
-.navbar {
-  float: left;
-  display: block;
-  color: transparent;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  background-color: ivory;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 .navbar-right {
@@ -23,24 +14,24 @@
   display: block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  margin-right: 3%;
   text-decoration: none;
 }
 
 .navbar-center {
-  display: inline-block;
-  color: transparent;
+  height: 5px;
+  display: block;
+  float: left;
+  color: white;
   text-align: center;
-  padding: 14px 16px;
+  margin-left: 2%;
   text-decoration: none;
-  text-align: center;
 }
 
 .block {
   display: block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
@@ -50,49 +41,26 @@
   color: white;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-}
-
-.home-text {
-  margin-left: 200px;
-  font-family: monospace;
-  font-size: 40sp;
-}
 
 .logo {
-  font-family: Tillana;
+  font-family: 'Tillana',cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
-  line-height: 46px;
+  text-decoration: none;
+  color: black;
 }
 
-.home-nav- {
-  font-family: Oxygen Mono;
+.home-nav, .home-who, .home-contact{
+  font-family: 'Oxygen Mono',monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
-  line-height: 33px;
+  text-decoration: none;
+  color: black;
+  
 }
 
-.home-who {
-  font-family: Oxygen Mono;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px;
-  line-height: 33px;
-}
-
-.home-contact {
-  font-family: Oxygen Mono;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px;
-  line-height: 33px;
-}
 
 /*
 */

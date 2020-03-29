@@ -10,25 +10,29 @@ import Contact from "./Contact";
 export default function Nav() {
   return (
     <nav>
+      <link
+        href="https://fonts.googleapis.com/css?family=Oxygen+Mono|Tillana&display=swap"
+        rel="stylesheet"
+      ></link>
       <ul className="base">
         <li className="navbar-center">
-          <Link to="/" className="">
-            <img src={pic} />
+          <Link to="/" className="logo">
+            <h4>DAPS</h4>
           </Link>
         </li>
         <li className="navbar-center">
-          <Link to="/" className="">
-            <img src={home} />
+          <Link to="/" className="home-nav">
+            <h5>Home</h5>
           </Link>
         </li>
         <li className="navbar-center">
-          <Link to="/who" className="">
-            <img src={who} />
+          <Link to="/who" className="home-who">
+            <h5>Who</h5>
           </Link>
         </li>
         <li className="navbar-right">
-          <Link to="/contact" className="">
-            <img src={contact} />
+          <Link to="/contact" className="home-contact ">
+            <h5>Contact</h5>
           </Link>
         </li>
       </ul>

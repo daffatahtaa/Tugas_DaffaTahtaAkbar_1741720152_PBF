@@ -17,6 +17,7 @@ body {
     width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: ivory;
 }
 
 .header {
@@ -29,7 +30,7 @@ body {
     text-transform: uppercase;
 }
 
-header h1 {
+.header h1 {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -37,7 +38,7 @@ header h1 {
     transform: translate(-50%, -50%);
 }
 
-header p {
+.header p {
     font-size: xx-large;
     margin: 0;
     position: absolute;
@@ -46,8 +47,8 @@ header p {
     transform: translate(-50%, -50%);
 }
 
-header,
-header:before {
+.header,
+.header:before {
     background: 50% 50% / cover;
 }
 
