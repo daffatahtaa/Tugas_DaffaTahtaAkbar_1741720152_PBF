@@ -34,3 +34,32 @@ ul li{
     font-family: 'Oxygen Mono',monospace;
   }
   
+.kosong{
+  margin-top: 20%;
+  margin-left: 44.5%;
+  font-size: medium;
+  font-family: 'Oxygen Mono',monospace;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.kosong::before{
+}
+.kosong:hover{
+  animation-name: hover;
+  animation-duration: 1s;
+  width: fit-content;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hover{
+  0% {color: red;}
+  14% {color: orangered;}
+  28% {color: orange;}
+  42% {color: yellow}
+  56% {color: orange;}
+  70% {color: orangered;}
+  84% {color: red;}
+
+
+}

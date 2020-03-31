@@ -1,11 +1,7 @@
 import React from "react";
 import "./App.css";
-import pic from "./image/logo.png";
-import home from "./image/Home.png";
-import who from "./image/Who.png";
-import contact from "./image/Contact.png";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Contact from "./Contact";
+import { Link } from "react-router-dom";
+
 
 export default function Nav() {
   return (
@@ -15,10 +11,10 @@ export default function Nav() {
         rel="stylesheet"
       ></link>
       <ul className="base">
-        <li className="navbar-center">
+        <li className="navbar-center">  
           <Link to="/" className="logo">
-            <h4>DAPS</h4>
-          </Link>
+            <h5>DAPS</h5>
+          </Link> 
         </li>
         <li className="navbar-center">
           <Link to="/" className="home-nav">
@@ -27,7 +23,7 @@ export default function Nav() {
         </li>
         <li className="navbar-center">
           <Link to="/who" className="home-who">
-            <h5>Who</h5>
+            <h5>Bio</h5>
           </Link>
         </li>
         <li className="navbar-right">
