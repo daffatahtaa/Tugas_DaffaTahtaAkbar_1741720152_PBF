@@ -3,7 +3,7 @@ import { AuthContext } from "./index";
 import * as firebase from "firebase";
 import * as firebaseui from "firebaseui";
 import firebaseConfig from "./firebase.config";
-
+import { Redirect } from "react-router-dom";
 
 const Join = () => {
   const [email, setEmail] = useState("");
@@ -31,6 +31,11 @@ const Join = () => {
       .auth()
       .signInWithPopup(provider)
       .then(function (res) {
+        firebase.auth().onAuthStateChanged((user) => {
+          if (user) {
+            window.location = "localhost:3000";
+          }
+        });
         console.log(res);
         console.log("naisu");
       })
