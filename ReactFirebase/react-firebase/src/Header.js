@@ -1,5 +1,5 @@
 import React from "react";
-import routes from "./routes";
+import routes from "./route";
 import { Link } from "react-router-dom";
 
 const Header = () => (

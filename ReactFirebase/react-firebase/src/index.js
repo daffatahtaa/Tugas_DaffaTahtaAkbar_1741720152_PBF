@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import ReactDom from "react-dom";
+import ReactDOM from "react-dom";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
-import routes from "./routes.js";
+import routes from "./route.js";
 import Header from "./Header";
 import "./styles.css";
 import * as firebase from "firebase";
@@ -36,4 +36,4 @@ function App() {
 }
 
 const rootElement = document.getElementById("root");
-
+ReactDOM.render(<App />, rootElement);

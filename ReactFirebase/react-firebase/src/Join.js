@@ -43,12 +43,12 @@ const Join = () => {
         <hr />
         <button class="googleBtn" type="button">
           <img
-            src="https://upload.wikimedia.org.wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+            src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
             alt="logo"
           />
           Join With Google
         </button>
-        <button type="submit">Login</button>
+        <button type="submit">Join</button>
         <span>{error}</span>
       </form>
     </div>
