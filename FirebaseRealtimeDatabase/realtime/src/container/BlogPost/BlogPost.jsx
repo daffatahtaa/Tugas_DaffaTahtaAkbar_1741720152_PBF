@@ -3,7 +3,7 @@ import "./BlogPost.css";
 import Post from "../../component/BlogPost/Post";
 /*import API from "../../services";*/
 import firebase from "firebase";
-import config from "../../firebase/config";
+import config from "../../firebase/firebase";
 
 class BlogPost extends Component {
   constructor(props) {
