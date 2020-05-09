@@ -1,0 +1,68 @@
+.ttl {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  padding-left: 4%;
+}
+
+.Input-placeholder {
+  padding-left: 4%;
+}
+
+.Input-text {
+  height: 5vh;
+  padding-left: 2vh;
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  margin: 0;
+  color: inherit;
+  width: 25%;
+  line-height: var(--inputLineHeight);
+  font-size: var(--inputFontSize);
+  transition: box-shadow var(--transitionDuration);
+  border-radius: 1em;
+}
+
+.Input-text::placeholder {
+  color: #b0bec5;
+}
+
+.Input-text:focus {
+  outline: none;
+  box-shadow: 0.2rem 0.8rem 1.6rem var(--colorPrimary600);
+}
+
+.btn-lgn{
+  margin-top: 3.5%;
+  margin-left: 5.5%;
+  position: fixed;
+  background-color: #A6CFF5;
+  cursor: pointer;
+  border: 1px solid #f0f0f0;
+  display: inline-block;
+  text-decoration: none;
+  padding: 9px 5px;
+  border-radius: 63px;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 15vh;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.btn-rgs{
+  margin-top: 3.5%;
+  margin-left: 18.5%;
+  position: fixed;
+  background-color: #DCF5A6;
+  cursor: pointer;
+  border: 1px solid #f0f0f0;
+  display: inline-block;
+  text-decoration: none;
+  padding: 9px 5px;
+  border-radius: 63px;
+  transform: translate(-50%, -50%);
+  color: black;
+  width: 15vh;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}

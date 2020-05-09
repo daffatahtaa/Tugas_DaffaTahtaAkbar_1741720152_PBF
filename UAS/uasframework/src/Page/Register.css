@@ -1,0 +1,26 @@
+.span {
+  padding-left: 4%;
+}
+
+.ttl-rgstr {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.btn-rgs2{
+    margin-top: 3.5%;
+    margin-left: 9.5%;
+    position: fixed;
+    background-color: #DCF5A6;
+    cursor: pointer;
+    border: 1px solid #f0f0f0;
+    display: inline-block;
+    text-decoration: none;
+    padding: 9px 5px;
+    border-radius: 63px;
+    transform: translate(-50%, -50%);
+    color: black;
+    width: 15vh;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+  }

@@ -1,15 +1,16 @@
-body {
+#home {
   background-image: url("../img//bgHome.png");
-  position: relative;
+  position: fixed;
   min-width: 100%;
-  min-height: 900%;
+  min-height: 100%;
+  display: block;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
   overflow: hidden;
-  height: 90%;
+  height: 100%;
 }
 
 .quote {

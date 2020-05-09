@@ -5,17 +5,21 @@ import "./Home.css";
 export default function Home() {
   return (
     <div>
-      <style>
-        @import
-        url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-      </style>
-      <div className="quote">
-        <h2>“Success is usually the culmination of controlling failure.”</h2>
-      </div>
-      <div className='name'>
-      <h2>Sylvester Stallone, actor</h2>
-      </div>
-      <a className='lginbtn' href='/Loginuser'>Login</a>
+      <body id='home'>
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+        </style>
+        <div className="quote">
+          <h2>“Success is usually the culmination of controlling failure.”</h2>
+        </div>
+        <div className="name">
+          <h2>Sylvester Stallone, actor</h2>
+        </div>
+        <a className="lginbtn" href="/Loginuser">
+          Login
+        </a>
+      </body>
     </div>
   );
 }
