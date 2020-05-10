@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Login.css";
 import fire from "../firebase/firebase";
 
-class Login extends React.Component{
+class Login extends React.Component {
   constructor(props) {
     super(props);
     this.login = this.login.bind(this);
@@ -22,18 +22,22 @@ class Login extends React.Component{
     fire
       .auth()
       .signInWithEmailAndPassword(this.state.email, this.state.password)
-      .then((u) => {})
+      .then((u) => {
+        //redirect to home2
+        window.location.replace("/home2");
+      })
       .then((u) => {
         console.log(u);
       })
       .catch((error) => {
+        alert(error);
         console.log(error);
       });
   }
   render() {
     return (
       <div>
-        <body id="home">
+        <div id="home">
           <style>
             @import
             url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
@@ -48,7 +52,7 @@ class Login extends React.Component{
                 placeholder="Example@email.com"
                 value={this.state.email}
                 onChange={this.handleChange}
-                name='email'
+                name="email"
               ></input>
             </div>
             <h1 className="ttl" style={{ paddingTop: "1vh" }}>
@@ -62,7 +66,7 @@ class Login extends React.Component{
                 placeholder="Password"
                 value={this.state.password}
                 onChange={this.handleChange}
-                name='password'
+                name="password"
               ></input>
               <a className="btn-lgn" href="" onClick={this.login}>
                 Login
@@ -72,7 +76,7 @@ class Login extends React.Component{
               </a>
             </div>
           </section>
-        </body>
+        </div>
       </div>
     );
   }

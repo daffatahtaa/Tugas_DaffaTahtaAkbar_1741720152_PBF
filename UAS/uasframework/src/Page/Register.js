@@ -38,17 +38,17 @@ class Register extends React.Component {
     fire
       .database()
       .ref("users/" + this.state.username)
-      .child('biodata')
+      .child("biodata")
       .set({
         username: this.state.username,
         email: this.state.email,
       });
-      window.location.replace('/loginuser')
+    window.location.replace("/loginuser");
   }
   render() {
     return (
       <div>
-        <body id="home">
+        <div id="home">
           <style>
             @import
             url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
@@ -95,7 +95,7 @@ class Register extends React.Component {
               Register
             </a>
           </div>
-        </body>
+        </div>
       </div>
     );
   }

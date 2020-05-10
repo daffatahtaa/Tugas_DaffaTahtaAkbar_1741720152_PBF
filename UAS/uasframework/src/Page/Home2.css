@@ -1,0 +1,52 @@
+#home2 {
+  background-image: url("../img/Home2.png");
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  display: block;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  overflow: hidden;
+  height: 100%;
+}
+
+.profile {
+  /*direction: rtl;*/
+  text-align: right;
+  margin-right: 5%;
+  margin-top: 2.5%;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: default;
+}
+
+#transparent {
+  background-color: transparent;
+}
+
+#title {
+  color: white;
+  margin-left: 3.5%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.info {
+  color: white;
+  margin-left: 4%;
+  padding-bottom: -5%;
+  width: fit-content;
+}
+
+.atas .page2 h1 {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.page1 .title-sm {
+  text-align: left;
+  font-size: large;
+  font-family: "Josefin Sans", sans-serif;
+}

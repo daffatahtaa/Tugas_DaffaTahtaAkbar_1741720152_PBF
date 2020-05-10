@@ -6,7 +6,10 @@ import Register from "./Page/Register";
 import Home from "./Page/Home";
 import Nav from "./Page/Nav";
 import Home2 from "./Page/Home2";
+import Profile from "./Page/Profile";
 import fire from "./firebase/firebase";
+
+const cUser = fire.auth().currentUser;
 
 class App extends React.Component {
   constructor(props) {
@@ -26,27 +29,40 @@ class App extends React.Component {
       console.log(user);
       if (user) {
         this.setState({ user });
-        localStorage.setItem('user', user.uid);
+        localStorage.setItem("user", user.uid);
       } else {
         this.setState({ user: null });
-        localStorage.removeItem('user');
+        localStorage.removeItem("user");
       }
     });
   }
+
+  check() {
+    if (cUser != null) {
+      window.location.replace("/home2");
+      //<Route path='/home2' exact component={Home2}/>
+    }
+    //else if (cUser == null){
+    //  //<Route path='/home' exact component={Home}/>
+    //}
+  }
+
+  goHome = () => {
+    return this.check();
+  };
 
   render() {
     return (
       <div>
         <Router>
           <Nav />
-          {this.state.user ? (<Home2 />) : (<Home />)}
+          {this.state.user ? <Home2 /> : <Home />}
           <Switch>
-            <Route path="/" exact component={Home} />
             <Route path="/loginuser" exact component={Login} />
             <Route path="/registeruser" exact component={Register} />
+            <Route path="/profile" exact component={Profile} />
           </Switch>
         </Router>
-        
       </div>
     );
   }

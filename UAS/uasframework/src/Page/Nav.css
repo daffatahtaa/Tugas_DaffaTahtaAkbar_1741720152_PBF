@@ -2,6 +2,27 @@ html {
   background-color: black;
 }
 
+.logo-placeholder .right {
+  direction: rtl;
+  color: white;
+  margin-left: 85%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: large;
+  cursor: default;
+}
+
+.right {
+  transform: translate(-50%, -50%);
+}
+
+.logout {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: default;
+  text-decoration: none;
+  list-style-type: none;
+}
+
 .base {
   margin-top: 0%;
   padding-top: 2%;
@@ -20,7 +41,6 @@ html {
   text-decoration: none;
   color: white;
   font-size: large;
-  
 }
 
 .navBrand:hover {
@@ -96,7 +116,9 @@ html {
   }
 }
 
-a:hover, a:visited, a:link, a:active
-{
-    text-decoration: none;
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
 }
