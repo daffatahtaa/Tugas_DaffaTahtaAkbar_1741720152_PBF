@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import "./Register.css";
 import fire from "../firebase/firebase";
 
 var database = fire.database();
 
-function writeData(userId, username, uEmail) {
-  fire.database().ref().child(userId);
-}
+//function writeData(userId, username, uEmail) {
+  //fire.database().ref().child(userId);
+//}
 
 class Register extends React.Component {
   constructor(props) {

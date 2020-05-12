@@ -50,3 +50,50 @@
   font-size: large;
   font-family: "Josefin Sans", sans-serif;
 }
+
+.logout {
+  color: rosybrown;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: default;
+  text-decoration: none;
+  list-style-type: none;
+  border: 1px solid rosybrown;
+  padding: 0.6em 0.6em 0.6em 0.6em;
+  background-color: black;
+  border-radius: 2em;
+  margin-top: 90%;
+  margin-right: 0.7%;
+}
+
+.refresh {
+  color: bisque;
+  border: 1px solid bisque;
+}
+
+.profile-card {
+  margin-top: 1%;
+}
+
+.profile-card ul {
+  margin-top: 1%;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.profile-card p {
+  margin-top: 0;
+}
+
+table {
+  margin: 2vh;
+  width: 70vh;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: large;
+}
+th {
+  font-family: "Josefin Sans", sans-serif;
+  margin-left: 20%;
+  text-align: center;
+  position: static;
+}

@@ -15,14 +15,6 @@ html {
   transform: translate(-50%, -50%);
 }
 
-.logout {
-  color: white;
-  font-family: "Josefin Sans", sans-serif;
-  cursor: default;
-  text-decoration: none;
-  list-style-type: none;
-}
-
 .base {
   margin-top: 0%;
   padding-top: 2%;

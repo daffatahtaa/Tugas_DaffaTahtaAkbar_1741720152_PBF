@@ -36,21 +36,6 @@ class App extends React.Component {
       }
     });
   }
-
-  check() {
-    if (cUser != null) {
-      window.location.replace("/home2");
-      //<Route path='/home2' exact component={Home2}/>
-    }
-    //else if (cUser == null){
-    //  //<Route path='/home' exact component={Home}/>
-    //}
-  }
-
-  goHome = () => {
-    return this.check();
-  };
-
   render() {
     return (
       <div>
