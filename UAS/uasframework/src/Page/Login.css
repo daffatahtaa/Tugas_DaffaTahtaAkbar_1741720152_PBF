@@ -20,6 +20,7 @@
   font-size: var(--inputFontSize);
   transition: box-shadow var(--transitionDuration);
   border-radius: 1em;
+  color: black;
 }
 
 .Input-text::placeholder {
@@ -35,15 +36,15 @@
   margin-top: 3.5%;
   margin-left: 5.5%;
   position: fixed;
-  background-color: #A6CFF5;
+  background-color: black;
   cursor: pointer;
-  border: 1px solid #f0f0f0;
+  border: 1px solid wheat;
   display: inline-block;
   text-decoration: none;
   padding: 9px 5px;
   border-radius: 63px;
   transform: translate(-50%, -50%);
-  color: black;
+  color: wheat;
   width: 15vh;
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
@@ -53,15 +54,15 @@
   margin-top: 3.5%;
   margin-left: 18.5%;
   position: fixed;
-  background-color: #DCF5A6;
+  background-color:black;
   cursor: pointer;
-  border: 1px solid #f0f0f0;
+  border: 1px solid rosybrown;
   display: inline-block;
   text-decoration: none;
   padding: 9px 5px;
   border-radius: 63px;
   transform: translate(-50%, -50%);
-  color: black;
+  color: rosybrown;
   width: 15vh;
   text-align: center;
   font-family: "Josefin Sans", sans-serif;

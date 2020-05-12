@@ -31,19 +31,30 @@ class Register extends React.Component {
       .then((u) => {})
       .then((u) => {
         console.log(u);
+        fire
+          .auth()
+          .signInWithEmailAndPassword(this.state.email, this.state.password);
+          window.alert('Register complete, redirecting to Home')
+          window.location.replace('/');
+      })
+      .then((u) => {
+        const date = new Date();
+        
+         fire.database().ref('users/' + fire.auth().currentUser.uid).child('user-data').set({
+           email: this.state.email,
+           username: this.state.username,
+           password: this.state.password
+         })
       })
       .catch((error) => {
+        window.alert(error)
         console.log(error);
       });
-    fire
-      .database()
-      .ref("users/" + this.state.username)
-      .child("biodata")
-      .set({
-        username: this.state.username,
-        email: this.state.email,
-      });
-    window.location.replace("/loginuser");
+    //fire.database().ref().child("biodata").set({
+      //username: this.state.username,
+      //email: this.state.email,
+    //});
+    //window.location.replace("/loginuser");
   }
   render() {
     return (

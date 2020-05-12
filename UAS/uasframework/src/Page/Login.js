@@ -24,16 +24,19 @@ class Login extends React.Component {
       .signInWithEmailAndPassword(this.state.email, this.state.password)
       .then((u) => {
         //redirect to home2
+        window.alert("Signin Successful");
         window.location.replace("/home2");
       })
       .then((u) => {
         console.log(u);
       })
       .catch((error) => {
-        alert(error);
+        window.alert(error);
         console.log(error);
+        window.alert("Try again");
       });
   }
+
   render() {
     return (
       <div>

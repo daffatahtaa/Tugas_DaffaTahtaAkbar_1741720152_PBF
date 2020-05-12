@@ -3,10 +3,49 @@ import "./Home2.css";
 import "./Home2.scss";
 import fire from "../firebase/firebase";
 
+const insertDb = fire.database();
+const ttlEasy = "Easy";
+const ttlMedium = "Medium";
+const ttlHard = "Hard";
+
 class Home2 extends React.Component {
   logout() {
     fire.auth().signOut();
   }
+
+  card() {
+    insertDb
+      .ref("users/" + fire.auth().currentUser.uid)
+      .child("user-workout")
+      .set({
+        Workout: ttlEasy,
+        MealPlan: "",
+      });
+    window.alert("Successfully choose " + " " + ttlEasy + ' ' + "Workout Plan");
+  }
+
+  card1() {
+    insertDb
+      .ref("users/" + fire.auth().currentUser.uid)
+      .child("user-workout")
+      .set({
+        Workout: ttlMedium,
+        MealPlan: "",
+      });
+    window.alert("Successfully choose " + " " + ttlMedium + ' ' + "Workout Plan");
+  }
+
+  card2() {
+    insertDb
+      .ref("users/" + fire.auth().currentUser.uid)
+      .child("user-workout")
+      .set({
+        Workout: ttlHard,
+        MealPlan: "",
+      });
+    window.alert("Successfully choose " + " " + ttlHard + ' ' + "Workout Plan");
+  }
+
   render() {
     return (
       <div>
@@ -21,7 +60,7 @@ class Home2 extends React.Component {
               <h1>Menu</h1>
               <p className="title-sm">Choose Workout Plan :</p>
               <div class="quotes">
-                <div class="card">
+                <div class="card" onClick={this.card}>
                   <div class="box box2">
                     <p>
                       <div className="inside">
@@ -36,7 +75,7 @@ class Home2 extends React.Component {
                   </div>
                   <div class="bg"></div>
                 </div>
-                <div class="card">
+                <div class="card" onClick={this.card1}>
                   <div class="box box2">
                     <p>
                       <div>
@@ -52,7 +91,7 @@ class Home2 extends React.Component {
                   </div>
                   <div class="bg"></div>
                 </div>
-                <div class="card">
+                <div class="card" onClick={this.card2}>
                   <div class="box box2">
                     <p>
                       <div>
@@ -101,7 +140,6 @@ class Home2 extends React.Component {
                       <p>
                         <div className="inside">
                           <h5>Breakfast :</h5>
-
                         </div>
                       </p>
                       <h2>Low Carbo</h2>
@@ -113,7 +151,6 @@ class Home2 extends React.Component {
                       <p>
                         <div className="inside">
                           <h5>Breakfast :</h5>
-
                         </div>
                       </p>
                       <h2>Diet</h2>
@@ -135,9 +172,7 @@ class Home2 extends React.Component {
               </div>
             </div>
             <footer>
-                <a>
-                    logout
-                </a>
+              <a onClick={this.logout}>logout</a>
             </footer>
           </section>
         </div>
